@@ -1,0 +1,38 @@
+# FastAPI and ASGI server
+fastapi
+uvicorn[standard]
+
+# PDF processing and layout preservation
+PyMuPDF       # pip package: pymupdf
+pdfplumber               # optional: better table extraction
+
+# OpenAI Translation API
+openai
+httpx                    # async HTTP client for OpenAI and others
+
+# File uploads and async support
+aiofiles
+python-multipart
+
+# Language detection (optional)
+# langdetect
+
+# Environment and config
+python-dotenv
+
+# Logging and utilities
+tqdm                     # progress bar for local runs
+python-magic             # MIME type detection (Windows)
+pydantic-settings>=2.0.3
+
+# Background task queue (optional, if using Celery)
+celery
+redis
+
+# OCR support (for scanned PDFs, optional)
+pytesseract
+opencv-python-headless   # OCR-compatible OpenCV
+Pillow
+
+# Templates and static files (if using HTML frontend in FastAPI)
+jinja2
